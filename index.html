@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fit-core-gym</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark:bg-[#0B0F19]">
+    <nav class="mx-auto mt-6 flex items-center justify-between px-5 py-4 bg-white/90 dark:bg-[#0B0F19]/90 md:px-8 lg:px-12 ">
+
+        <div class="flex items-center gap-1 md:gap-2">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                class="w-5 h-5 md:w-7 md:h-7 text-[#F97316]" 
+                fill="none" viewBox="0 0 24 24" 
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+
+            <!-- Text -->
+            <h1 class="font-heading text-2xl md:text-3xl tracking-wide">
+                <span class="text-gray-700 dark:text-white">Fit</span>
+                <span class="text-[#F97316]">Core</span>
+            </h1>
+        </div>
+        <!--Nav Links-->
+        <ul class="hidden lg:flex items-center gap-10 text-lg font-medium font-body text-gray-700 dark:text-[#F9FAFB] ">
+            <li class="hover:text-[#F97316] transition-colors ease-in-out relative after:content-[''] after:absolute after:w-2 after:h-2 after:bg-orange-500 after:rounded-full after:left-1/2 after:-translate-x-1/2 after:-bottom-3 after:opacity-0 hover:after:opacity-100 after:transition-all duration-[0.5s]"><a href="#">Home</a></li>
+            <li class="hover:text-[#F97316] transition-colors ease-in-out relative after:content-[''] after:absolute after:w-2 after:h-2 after:bg-orange-500 after:rounded-full after:left-1/2 after:-translate-x-1/2 after:-bottom-3 after:opacity-0 hover:after:opacity-100 after:transition-all duration-[0.5s]"><a href="#">About</a></li>
+            <li class="hover:text-[#F97316] transition-colors ease-in-out relative after:content-[''] after:absolute after:w-2 after:h-2 after:bg-orange-500 after:rounded-full after:left-1/2 after:-translate-x-1/2 after:-bottom-3 after:opacity-0 hover:after:opacity-100 after:transition-all duration-[0.5s]"><a href="#">Programs</a></li>
+            <li class="hover:text-[#F97316] transition-colors ease-in-out relative after:content-[''] after:absolute after:w-2 after:h-2 after:bg-orange-500 after:rounded-full after:left-1/2 after:-translate-x-1/2 after:-bottom-3 after:opacity-0 hover:after:opacity-100 after:transition-all duration-[0.5s]"><a href="#">Pricing</a></li>
+            <li class="hover:text-[#F97316] transition-colors ease-in-out relative after:content-[''] after:absolute after:w-2 after:h-2 after:bg-orange-500 after:rounded-full after:left-1/2 after:-translate-x-1/2 after:-bottom-3 after:opacity-0 hover:after:opacity-100 after:transition-all duration-[0.5s]"><a href="#">Blog</a></li>
+            <li class="hover:text-[#F97316] transition-colors ease-in-out relative after:content-[''] after:absolute after:w-2 after:h-2 after:bg-orange-500 after:rounded-full after:left-1/2 after:-translate-x-1/2 after:-bottom-3 after:opacity-0 hover:after:opacity-100 after:transition-all duration-[0.5s]"><a href="#">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-5">
+            <!-- Theme Toggle -->
+            <button class="px-4 py-2 rounded-full border border-gray-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+                <i class="fa-solid fa-moon text-gray-700 hover:text-orange-500 transition-all duration-[0.3s]"></i>
+            </button>
+
+            <!-- Join Button -->
+            <button class="hidden md:block font-body bg-gradient-to-r from-[#F97316] to-[#FB923C]  px-7 py-3 rounded-2xl transition duration-300 shadow-[0_0_20px_rgba(249,115,22,0.45)] hover:-translate-y-1">
+                Join Now
+            </button>
+
+            <!--Hamburger-->
+            <button class="lg:hidden text-2xl text-gray-700 dark:text-gray-100">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    
+    <!--Hero Section-->
+    <section class="relative w-[95%] mx-auto mt-8 rounded-[40px] overflow-hidden min-h-screen bg-[#0B0F19]">
+        <img src="src/images/gym-bg.png" alt="" class="absolute object-cover w-full h-full opacity-50">
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 flex flex-col lg:flex-row items-center px-8 lg:px-20 py-20">
+            <!--Left Side-->
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-3 border border-[#F97316] rounded-full px-5 py-2 mb-8">
+                    <div class="w-3 h-3 rounded-full bg-[#F97316] animate-pulse"></div>
+                    <div class="text-[#F97316] uppercase font-heading">Train Hard • Stay Strong</div>
+                </div>
+                <h1 class="text-6xl md:text-7xl lg:text-8xl font-extrabold leading-none uppercase text-[#F9FAFB] font-heading">Strong <span class="text-[#F97316]">Body.</span> <br> Strong <span class="text-[#FB923C]">Mind.</span></h1>
+                <p class="mt-8 text-lg leading-8 text-[#9CA3AF] max-w-xl font-body">Transform your body, boost your confidence and become the strongest version of yourself.</p>
+
+                <!--Buttons-->
+                <div class="flex flex-wrap gap-6 mt-10">
+                    <button class="px-8 py-4 rounded-2xl text-white font-semibold bg-gradient-to-r from-[#F97316] to-[#FB923C] hover:-translate-y-1 transition duration-300 shadow-[0_0_25px_rgba(249,115,22,0.45)]">
+                        Start Your Journey
+                    </button>
+                    <!-- Watch Button -->
+                    <button class="flex items-center gap-4 text-white">
+                        <div class="w-14 h-14 rounded-full border border-white/30 flex items-center justify-center hover:border-[#F97316] transition">
+                            <i class="fa-solid fa-play text-sm"></i>    
+                        </div>
+                        <span class="text-lg font-medium">
+                            Watch Video
+                        </span>
+
+                    </button>
+                </div>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-16">
+                    <!-- Stat -->
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-2xl bg-[#1F2937] flex items-center justify-center text-[#F97316] text-2xl">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-white">500+</h3>
+                            <p class="text-[#9CA3AF]">Expert Trainers</p>
+                        </div>
+                    </div>
+                    <!--Stat-->
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-2xl bg-[#1F2937] flex items-center justify-center text-[#F97316] text-2xl">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-white">10k+</h3>
+                            <p class="text-[#9CA3AF]">Happy Members</p>
+                        </div>
+                    </div>
+                    <!-- Stat -->
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-2xl bg-[#1F2937] flex items-center justify-center text-[#F97316] text-2xl">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-bold text-white">50+</h3>
+                            <p class="text-[#9CA3AF]">Fitness Programs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Right Side Image-->
+            <div class="relative mt-16 lg:mt-0">
+                <img src="src/images/gym-man.png" alt="" class="w-[800px] object-cover">
+                <!-- Floating Badge -->
+                <div class="absolute top-10 -right-10 w-40 h-40 rounded-full border border-white/20 flex flex-col items-center justify-center bg-black/40 backdrop-blur-md">
+                    <p class="text-5xl font-extrabold text-[#F97316]">24/7</p>
+                    <p class="text-white uppercase tracking-[3px] text-sm">Support</p>      
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Section -->
+    <section class="w-[95%] mx-auto mt-20 text-center">
+
+        <!-- Top Badge -->
+        <div class="inline-flex items-center gap-3 border border-[#F97316] rounded-full px-5 py-2 mb-8">
+            <div class="w-3 h-3 rounded-full bg-[#F97316] animate-pulse"></div>
+            <div class="text-[#F97316] uppercase font-heading tracking-wide">Why Choose Us</div>
+        </div>
+
+        <!-- Heading -->
+        <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-none uppercase text-[#0B0F19] dark:text-white font-heading">Built For <span class="text-[#F97316]">Results.</span>
+            <br>
+            Designed For <span class="text-[#FB923C]">You.</span>
+        </h1>
+        <!-- Paragraph -->
+        <p class="text-gray-700 dark:text-gray-300 font-body max-w-2xl mx-auto mt-6 leading-8">
+            We provide everything you need to crush your fitness goals
+            in a motivating and supportive environment.
+        </p>
+        <!-- Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
+            <!-- Card -->
+            <div class="bg-white dark:bg-[#111827] border-2 border-[#F97316] dark:border-[#FB923C] rounded-2xl flex flex-col items-center justify-center p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(249,115,22,0.25)]">
+                <!-- Icon -->
+                <div class="border-2 rounded-full p-4 border-[#F97316] mb-5">
+                    <i class="fa-solid fa-dumbbell text-[#F97316] text-2xl"></i>
+                </div>
+
+                <!-- Title -->
+                <h1 class="text-[#0B0F19] dark:text-white font-heading text-3xl tracking-wide">Modern Equipment</h1>
+                <!-- Accent Line -->
+                <div class="w-16 h-1 bg-[#F97316] rounded-full mt-3"></div>
+
+                <!-- Text -->
+                <p class="font-body text-gray-700 dark:text-gray-300 mt-5 leading-7">Train with state-of-the-art machines and premium fitness equipment.</p>
+
+            </div>
+
+        <!-- Card -->
+            <div class="bg-white dark:bg-[#111827] border-2 border-[#F97316] dark:border-[#FB923C] rounded-2xl flex flex-col items-center justify-center p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(249,115,22,0.25)]">
+
+            <!-- Icon -->
+            <div class="border-2 rounded-full p-4 border-[#F97316] mb-5">
+                <i class="fa-solid fa-user text-[#F97316] text-2xl"></i>
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-[#0B0F19] dark:text-white font-heading text-3xl tracking-wide">
+                Expert Trainers
+            </h1>
+
+            <!-- Accent Line -->
+            <div class="w-16 h-1 bg-[#F97316] rounded-full mt-3"></div>
+
+            <!-- Text -->
+            <p class="font-body text-gray-700 dark:text-gray-300 mt-5 leading-7">
+                Work with certified and experienced trainers who truly care about your progress.
+            </p>
+
+        </div>
+
+        <!-- Card -->
+        <div class="bg-white dark:bg-[#111827] border-2 border-[#F97316] dark:border-[#FB923C] rounded-2xl flex flex-col items-center justify-center p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(249,115,22,0.25)]">
+
+            <!-- Icon -->
+            <div class="border-2 rounded-full p-4 border-[#F97316] mb-5">
+                <i class="fa-solid fa-calendar text-[#F97316] text-2xl"></i>
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-[#0B0F19] dark:text-white font-heading text-3xl tracking-wide">
+                Flexible Schedule
+            </h1>
+
+            <!-- Accent Line -->
+            <div class="w-16 h-1 bg-[#F97316] rounded-full mt-3"></div>
+
+            <!-- Text -->
+            <p class="font-body text-gray-700 dark:text-gray-300 mt-5 leading-7">
+                Enjoy flexible class timings and programs that fit perfectly into your routine.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
